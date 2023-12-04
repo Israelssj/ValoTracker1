@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negrofondo"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/rojovalo"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_height="wrap_content"
+            android:text="Inicio"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Stats"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Lineups"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojovalo"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Agentes"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/valorant_logo_png_file" />
+
+    <TextView
+        android:id="@+id/totalPartidas"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="14dp"
+        android:background="@color/rojovalo"
+        android:text="Total de Partidas Registradas: 0"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/partidasGanadas"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPartidas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/negrofondo"
+        android:backgroundTint="@color/rojovalo"
+        android:text="Ganadas: 0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/partidasPerdidas"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/partidasGanadas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/rojovalo"
+        android:text="Perdidas: 0"
+        android:background="@color/rojovalo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/combatScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/partidasPerdidas"
+        android:layout_marginTop="16dp"
+        android:text="Combat Score: 0"
+        android:textColor="@color/negrofondo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/combatScore"
+        android:layout_marginTop="16dp"
+        android:text="Muertes: 0"
+        android:textColor="@color/negrofondo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/assists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deaths"
+        android:layout_marginTop="16dp"
+        android:text="Asistencias: 0"
+        android:textColor="@color/negrofondo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="481dp"
+        android:layout_below="@id/assists"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-113dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/assists" />
+
+</RelativeLayout>

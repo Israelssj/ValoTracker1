@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461669757235",
+    "project_id": "tracker-ed606",
+    "storage_bucket": "tracker-ed606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461669757235:android:72c331bdca96c80a2e8e46",
+        "android_client_info": {
+          "package_name": "com.example.valotracker1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzNd1qRD2MdcHWt12BIGzpSsRwcFAiK0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

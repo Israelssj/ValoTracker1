@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negrofondo"
+    tools:context=".BrimLineup">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/rojovalo"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_height="wrap_content"
+            android:text="Inicio"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Stats"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/rojovalo"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Lineups"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojovalo"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Agentes"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_below="@id/btn3"
+        app:srcCompat="@drawable/valorant_logo_png_file" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mapaTextView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Lineups Brimstone"
+
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/brim" />
+
+            <TextView
+                android:id="@+id/mapaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Bind"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="5qfkHX02Hwc" />
+
+            <TextView
+                android:id="@+id/mapaTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Haven"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="eiKZUfGik0Y" />
+
+            <TextView
+                android:id="@+id/mapaTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Split"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="slVJZe9yrxw" />
+
+            <TextView
+                android:id="@+id/mapaTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Ascent"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="YD0L3nbWrh4" />
+
+            <TextView
+                android:id="@+id/mapaTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Icebox"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="WM3Vnj1_ubw" />
+
+            <TextView
+                android:id="@+id/mapaTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Breeze"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="lUcBrbnwBIc" />
+
+            <TextView
+                android:id="@+id/mapaTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Fracture"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="I9aEEBJ2aLk" />
+
+            <TextView
+                android:id="@+id/mapaTextView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Pearl"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="v036AhnT3BI" />
+
+            <TextView
+                android:id="@+id/mapaTextView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojovalo"
+                android:text="Mapa Lotus"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="dqRikWERfc4" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

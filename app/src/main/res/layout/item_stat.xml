@@ -1,0 +1,63 @@
+<!-- res/layout/item_stat.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textoAdicional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información Adicional:"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/agenteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoAdicional"
+        android:text="Agente" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agenteTextView"
+        android:text="Resultado" />
+
+    <TextView
+        android:id="@+id/killsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultadoTextView"
+        android:text="Kills" />
+
+    <TextView
+        android:id="@+id/combatScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/killsTextView"
+        android:text="Combat Score" />
+
+    <TextView
+        android:id="@+id/deathsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/combatScoreTextView"
+        android:text="Muertes" />
+
+    <TextView
+        android:id="@+id/assistsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deathsTextView"
+        android:text="Asistencias" />
+
+    <!-- Nuevo campo para Mapas -->
+    <TextView
+        android:id="@+id/mapasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assistsTextView"
+        android:text="Mapas" />
+</RelativeLayout>
